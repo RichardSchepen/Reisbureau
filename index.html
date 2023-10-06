@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reisboekingsformulier</title>
+</head>
+<body>
+
+    <form>
+        <label for="voornaam">Voornaam:</label>
+        <input type="text" id="voornaam" name="voornaam" required placeholder="bijv. Jan">
+        <br>
+        <label for="achternaam">Achternaam:</label>
+        <input type="text" id="achternaam" name="achternaam" placeholder="bijv. Jansen">
+        <br>
+        <label>Geslacht:</label>
+        <input type="radio" id="man" name="geslacht" value="man" checked>
+        <label for="man">Man</label>
+        <input type="radio" id="vrouw" name="geslacht" value="vrouw">
+        <label for="vrouw">Vrouw</label>
+        <br>
+        <label for="straat">Straat met huisnummer:</label>
+        <input type="text" id="straat" name="straat" required placeholder=" bijv. Piet Heinkade 48A">
+        <br>
+        <label for="postcode">Postcode:</label>
+        <input type="text" id="postcode" name="postcode" required placeholder="bijv. 2453 LW">
+        <br>
+        <label for="stad">Stad:</label>
+        <input type="text" id="stad" name="stad" required placeholder="bijv. Raar">
+        <br>
+        <label for="bsn">BSN-nummer:</label>
+        <input type="text" id="bsn" name="bsn" pattern="[0-9]{1,9}" required>
+        <br>
+        <label for="vakantieland">Vakantieland:</label>
+        <select id="vakantieland" name="vakantieland" required>
+            <option value="Nigeria">Nigeria</option>
+            <option value="Polen">Polen</option>
+            <option value="Trinidad en Tabago">Trinidad en Tabago</option>
+        </select>
+        <br>
+        <label for="vertrekdatum">Datum van vertrek:</label>
+        <input type="date" id="vertrekdatum" name="vertrekdatum" required>
+        <br>
+        <label for="terugkomstdatum">Datum van terugkomst:</label>
+        <input type="date" id="terugkomstdatum" name="terugkomstdatum" required>
+        <br>
+        <label for="aantalreisgenoten">Aantal reisgenoten (max 4 mensen):</label>
+        <input type="number" id="aantalreisgenoten" name="aantalreisgenoten" min="0" max="4" required>
+        <br>
+        <label for="email">e-mailadres:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="wachtwoord">Wachtwoord:</label>
+        <input type="password" id="wachtwoord" name="wachtwoord" required>
+        <br>
+        <input type="submit" value="Boek nu">
+    </form>
+</body>
+</html>
